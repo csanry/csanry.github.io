@@ -1,0 +1,77 @@
+basics:
+  name: "Clarence San"
+  label: "Data Analyst"
+  picture: 
+  email: "clarencesan@gmail.com"
+  phone: ""
+  website: "https://csanry.github.io/"
+  summary: >
+    Hello, I'm Clarence
+
+  profiles:
+    - network: "Github"
+      username: "csanry"
+      url: "https://github.com/csanry"
+    - network: "LinkedIn"
+      username: "Clarence San"
+      url: "https://www.linkedin.com/in/clarencesan/"
+work:
+  - company: "Foodpanda SG"
+    position: "Data Analyst"
+    website: "foodpanda.sg"
+    startDate: "2022-01-01"
+    endDate: ""
+    summary: >
+      - Summary here 
+    highlights:
+      - Highlights here
+  - company: "Kantar Millword Brown"
+    position: "Analytics Associate"
+    website: "https://www.kantar.com"
+    startDate: "2019-08-01"
+    endDate: "2021-01-01"
+    summary: >
+      Kantar.
+    highlights:
+      - Highlights here
+
+education:
+  - institution: "SMU"
+    area: "Analytics"
+    studyType: "Masters"
+    startDate: "2022-01-01"
+    endDate: "2023-04-01"
+    # gpa: "4.0"
+    courses:
+      - "Applied Machine Learning"
+      - "Data Science for Business"
+      - "Machine Learning Engineering"
+      - "Applied Statistical Analysis" 
+      - "Spreadsheet Modelling"
+projects:
+  - title: "Example title"
+    startDate: "2018-09-01"
+    endDate: "2019-10-01"
+    summary: "Summary here"
+    url: "url"
+    highlights:
+      - "Point 1"
+      - "Point 2"
+      - "Point 3"
+awards:
+  - title: "Example Award"
+    awarder: "Awarder"
+    highlights:
+      - "2019"
+skills:
+  - name: "Python"
+    level: "Intermediate"
+    keywords:
+      - "Python"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.
+
+# <https://jsonresume.org/>
