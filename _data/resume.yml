@@ -70,10 +70,15 @@ awards/certifications:
 skills:
   - name: "Languages"
     keywords:
-      - "Python","R","SQL","Scala"
+      - "Python"
+      - "R"
+      - "SQL"
+      - "Scala"
   - name: "Frameworks"
     keywords: 
-      - "Google Cloud Platform","BigQuery","Airflow"
+      - "Google Cloud Platform"
+      - "BigQuery"
+      - "Airflow"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >
