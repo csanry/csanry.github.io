@@ -1,18 +1,17 @@
 basics:
   name: "Clarence San"
-  label: "Data Analyst"
+  label: "Data Science and Analytics"
   picture: 
   email: "clarencesan@gmail.com"
   phone: ""
   website: "https://csanry.github.io/"
   summary: >
     Hello, I'm Clarence
-
   profiles:
     - network: "Github"
       username: "csanry"
       url: "https://github.com/csanry"
-    - network: "LinkedIn"
+    - network: "Linkedin"
       username: "Clarence San"
       url: "https://www.linkedin.com/in/clarencesan/"
 work:
@@ -22,32 +21,37 @@ work:
     startDate: "2022-01-01"
     endDate: ""
     summary: >
-      - Summary here 
+      - Serving the regional APAC New Verticals team spanning 12 markets  
     highlights:
-      - Highlights here
-  - company: "Kantar Millword Brown"
+      - Optimized SQL queries for supplier dashboard to reduce processing times by 10%
+  - company: "Kantar Millward Brown"
     position: "Analytics Associate"
     website: "https://www.kantar.com"
     startDate: "2019-08-01"
     endDate: "2021-01-01"
     summary: >
-      Kantar.
+      The Analytics division of Kantar
     highlights:
-      - Highlights here
-
+      - Developed analytic models - methodologies included Structural Equation Modelling, Regression, Classification, Segmentation, Ensemble modelling and Marketing Mix Modelling
+      - Conceptualize and spearheaded an APAC-wide knowledge session on improving MS Excel workflows - 500+ attendees
+      - Instituted a repository of ~20 Python, R, and VBA scripts to streamline workflow efficiency and reduce time required for menial checks by more than 80%
 education:
-  - institution: "SMU"
+  - institution: "Singapore Management University"
     area: "Analytics"
     studyType: "Masters"
     startDate: "2022-01-01"
     endDate: "2023-04-01"
     # gpa: "4.0"
     courses:
-      - "Applied Machine Learning"
-      - "Data Science for Business"
-      - "Machine Learning Engineering"
-      - "Applied Statistical Analysis" 
-      - "Spreadsheet Modelling"
+      - "Coursework - Applied Machine Learning, Data Science for Business, Machine Learning Engineering, Statistical Analysis, Spreadsheet Modelling"
+  - institution: "University of Melbourne"
+    area: "Media and Communications"
+    studyType: "Bachelors"
+    startDate: "2016-12-01"
+    endDate: "2018-12-01"
+    # gpa: "4.0"
+    courses:
+      - "Coursework - Digital Media Research, Research Methods, Comparative Media Systems, Marketing Communications"
 projects:
   - title: "Example title"
     startDate: "2018-09-01"
@@ -58,16 +62,18 @@ projects:
       - "Point 1"
       - "Point 2"
       - "Point 3"
-awards:
+awards/certifications:
   - title: "Example Award"
     awarder: "Awarder"
     highlights:
       - "2019"
 skills:
-  - name: "Python"
-    level: "Intermediate"
+  - name: "Languages"
     keywords:
-      - "Python"
+      - "Python","R","SQL","Scala"
+  - name: "Frameworks"
+    keywords: 
+      - "Google Cloud Platform","BigQuery","Airflow"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

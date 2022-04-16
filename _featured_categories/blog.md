@@ -7,7 +7,7 @@ sidebar: true
 order: 2
 description: >
   blog
-hide description: true
+hide_description: true
 sitemap: false
 permalink: /_posts/
 ---

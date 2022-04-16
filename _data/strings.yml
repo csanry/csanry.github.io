@@ -43,10 +43,10 @@ redirecting:           Redirecting…
 continue_reading:      >
   Continue reading <!--post_title-->
 
-cookies_banner:
-  text:                >
-    This site uses cookies. [Cookies Policy](/cookies-policy/).
-  okay:                Okay
+# cookies_banner:
+#   text:                >
+#     This site uses cookies. [Cookies Policy](/cookies-policy/).
+#   okay:                Okay
 
 not_found:
   title:               '404: Page Not Found'
@@ -130,7 +130,7 @@ resume:
   volunteer:           Volunteer
   volunteer_title:     <!--position--> at <!--organization-->
   education:           Education
-  education_title:     <!--study_type--> in <!--area--><br>&emsp;&emsp;from <!--institution--> with GPA of <!--gpa-->
+  education_title:     <!--study_type--> in <!--area--><br> from <!--institution-->
   certificate_title:   <!--certificate-->
   projects:            Projects
   projects_title:      "<!--title-->: <!--date-->"
