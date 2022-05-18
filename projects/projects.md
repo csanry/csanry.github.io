@@ -1,15 +1,15 @@
 ---
 layout: projects
 type: category
-title: Projects
-slug: Projects
-show_collection: projects
-sidebar: true
-order: 3
+title: projects
+slug: projects
 description: >
   Description for projects here
 hide_description: true
-sitemap: false
+show_collection: projects
+sitemap: true
+sidebar: true
+order: 3
 permalink: /projects/
 ---
 
@@ -26,15 +26,11 @@ Repository of my projects
 
 
 
-[Test-one]: test.md
-[telco_churn]: 2021-06-11-telco-churn.md
-
-[python_katas]: 2022-03-12-python.md
-
-
-
 <!--author-->
 
 <!-- Links -->
 [resume]: /resume/
 [Hydejack]: https://hydejack.com
+[Test-one]: test.md
+[telco_churn]: 2022-06-11-telco-churn.md
+[python_katas]: 2022-03-12-python.md

@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: Resume
+title: resume
 description: >
   Hi, I'm a Masters student at SMU.
 hide_description: true

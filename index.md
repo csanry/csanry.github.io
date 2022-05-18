@@ -21,6 +21,13 @@ cover: true
 
 
 
+## Latest Posts
+
+<!--posts-->
+
+See [Posts](/posts/) for more
+{:.read-more}
+
 <!-- Links -->
 [resume]: /resume/
 [Hydejack]: https://hydejack.com
