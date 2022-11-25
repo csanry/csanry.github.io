@@ -2,8 +2,8 @@
 layout: list
 type: category
 title: > 
-  posts 
-sidebar: false 
+  posts
+sidebar: false
 order: 2
 slug: Posts
 description: >

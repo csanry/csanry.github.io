@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Simple Linear Regression - A Layman's Explanation
-image: 
+title: Simple Linear Regression - A Layman's Guide 
+image: /assets/img/2022-05-14-Simple-Linear-Regression/featured_image.png
 description: >
-  Breaking down the essential concepts behind regression techniques
-hide_description: false
+  The essential ideas and concepts behind regression
+hide_description: true 
 hide_last_modified: true
 sitemap: false
 ---
 
-Machine learning and statistics have many applications in business and the social sciences. However, the theory is often intimidating and not easily understood. In this series of articles, I aim to demystify the concepts behind the common tools used in data science and machine learning, starting with linear regression.
+> Machine learning and statistics have many applications in business and the social sciences. However, the theory is often intimidating and not easily understood. In this series of articles, I aim to demystify the concepts behind the common tools used in data science and machine learning, starting with linear regression.
 
 ## Overview
 
@@ -34,7 +34,7 @@ Before running any sort of model, it is good to plot your data to visually check
 Even without SLR, we can identify a trend that appears linear and positive: based on our sample dataset, it would seem that students who studied more were likely to do better. Note that in the plot, I have set y = exam results and x = study time. It is conventional to plot the dependent variable on the y axis.
 
 <figure>
-  <img src="{{site.url}}/assets/img/2021-05-14-Simple-Linear-Regression/sample_dataset.PNG">
+  <img src="{{site.url}}/assets/img/2022-05-14-Simple-Linear-Regression/sample_dataset.png">
   <figcaption>While it is difficult to identify any relationship between study time and exam results from the numbers, it becomes more apparent once the numbers are plotted</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ We can express a simple linear regression using the following equation:
 
 
 <figure>
-  <img src="{{site.url}}/assets/img/2021-05-14-Simple-Linear-Regression/simple_linear_regression.PNG">
+  <img src="{{site.url}}/assets/img/2022-05-14-Simple-Linear-Regression/simple_linear_regression.png">
   <figcaption>If this looks scary, remember that we are really only looking at three main components -- our y dependent (data), a linear component (model), and error component (error)</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ The line (represented in green below) is the visual representation of our model 
 **_Exam Results = 57.46 + 2.18 x Hours Studied_**
 
 <figure>
-  <img src="{{site.url}}/assets/img/2021-05-14-Simple-Linear-Regression/model_visualization.PNG">
+  <img src="{{site.url}}/assets/img/2022-05-14-Simple-Linear-Regression/model_visualization.png">
   <figcaption>Another way of framing the problem: given one unit increase of x (one more hour of studying), how much should one expect their exam results to improve on average?</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ These considerations, which are not captured in our linear component, form part 
 **ε _\= Measurement Error + Omitted Variables + Random Variation_**
 
 <figure>
-  <img src="{{site.url}}/assets/img/2021-05-14-Simple-Linear-Regression/poor_fit.PNG">
+  <img src="{{site.url}}/assets/img/2022-05-14-Simple-Linear-Regression/poor_fit.png">
   <figcaption>In essence, the error term describes how far our model is from reality. Poorer model fit results in larger errors?</figcaption>
 </figure>
 
@@ -84,14 +84,14 @@ These considerations, which are not captured in our linear component, form part 
 
 To recap, we have the values for our y (exam results) and x (study time). Given our data, we estimate the values of _β\_0_ and _β\_1._ How do we select “ideal” values? We want _βs_ that minimize the residual sum of squares (RSS). We can calculate the RSS of our model using the following equation:
 
-![](/assets/img/2021-05-14-Simple-Linear-Regression/rss.PNG)
+![](/assets/img/2022-05-14-Simple-Linear-Regression/rss.png)
 
 Terminology time — this method of fitting the model is known as **ordinary least squares (or OLS). Under certain assumptions,** OLS will provide the best possible estimates for SLR. A model fit using this method is also known as the **line of best fit.**
 
 There is also a convenient solution to find the best _β_ estimates from OLS using linear algebra:
 
 <figure>
-  <img src="{{site.url}}/assets/img/2021-05-14-Simple-Linear-Regression/ols_estimate.PNG">
+  <img src="{{site.url}}/assets/img/2022-05-14-Simple-Linear-Regression/ols_estimate.png">
   <figcaption>In matrix form, the best β estimates equals the inverse of X-transpose times X, multiplied by X-transpose times y</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ The R² is often used and reported to validate our model’s “strength” as i
 *   We can quantify such relationships by modelling a line of best fit — a model that can be mathematically expressed as:
 
 <figure>
-  <img src="{{site.url}}/assets/img/2021-05-14-Simple-Linear-Regression/line_best_fit.PNG" style="width:100%">
+  <img src="{{site.url}}/assets/img/2022-05-14-Simple-Linear-Regression/line_best_fit.png" style="width:100%">
 </figure>
 
 *   _β\_0_ and _β\_1,_ which are the intercept and the slope of the line respectively, are estimated by minimizing the residual sum of squares (RSS) of the model — this method of estimating _βs_ is known as the ordinary least squares method.
