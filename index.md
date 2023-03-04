@@ -1,11 +1,12 @@
 ---
 layout: welcome
-title: Hello there
+title: >
+  Hello there
 description: >
   Hello there
 hide_description: true
-no_groups: true
-sitemap: false
+sitemap: true
+
 cover: true
 ---
 
@@ -14,23 +15,25 @@ cover: true
 <!--author-->
 
 
+### [Find out more here](/about/)
+{:.read-more}
+
+
+## Projects
+
 <!--projects-->
 
+### [Get more here](/projects/)
+{:.read-more}
 
-<!--posts_list-->
-
-
-
-## Latest Posts
+## Posts
 
 <!--posts-->
+<!--posts_list-->
 
-See [Posts](/posts/) for more
+### [Get more of my posts here](/blog/)
 {:.read-more}
+
 
 <!-- Links -->
 [resume]: /resume/
-[Hydejack]: https://hydejack.com
-
-
-
