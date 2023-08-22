@@ -11,7 +11,7 @@ layout: page
 {% assign nsd = site.hydejack.no_structured_data | default:site.no_structured_data %}
 
 {% assign projects_group_by = site.data.strings.date_formats.projects_group_by | default:"%Y" %}
-{% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
+{% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:true %}
 
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}

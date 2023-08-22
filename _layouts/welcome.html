@@ -9,7 +9,7 @@ layout: about
 {% assign patch = version[2] | plus:0 %}
 
 {% assign strings = site.data.strings %}
-{% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
+{% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:true %}
 
 {% assign nodes = site.html_pages | concat: site.documents %}
 
@@ -38,7 +38,7 @@ layout: about
 {% elsif site.projects.size > 1 %}
   <div class="columns mt2 {% unless no_third_column %}columns-break{% endunless %}">
     {% assign ordered_projects = site.projects | sort:"date" | reverse %}
-    {% for project in ordered_projects limit:2 %}
+    {% for project in ordered_projects limit:4 %}
       {% assign featured = page.featured | default:project.featured | default:page.big_project | default:project.big_project %}
       <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
         {% include_cached pro/project-card.html project=project featured=featured %}
