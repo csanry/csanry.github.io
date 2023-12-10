@@ -27,7 +27,7 @@ print("Hello, World!")
 
 ## 🔥 About me
 
-- I am current a **Data Analyst @ [foodpanda]** <br>
+- I am currently a **Data Analyst @ [foodpanda]** <br>
 - I was previously an **Analytics Associate @ [Kantar Analytics]** <br>
 - Did my **Masters of IT in Business @ [Singapore Management University]** <br>
   - GMAT of **[750 (98th percentile)]()**

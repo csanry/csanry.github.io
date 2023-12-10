@@ -6,8 +6,8 @@ description: >
   Hello there
 hide_description: true
 sitemap: true
-
 cover: true
+featured: false 
 ---
 
 ## A bit about myself
@@ -29,7 +29,6 @@ cover: true
 ## Posts
 
 <!--posts-->
-<!--posts_list-->
 
 ### [Get more of my posts here](/blog/)
 {:.read-more}

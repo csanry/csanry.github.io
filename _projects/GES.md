@@ -9,10 +9,10 @@ links:
     target: _blank
 description: >
   Identifying graduate employment outcomes and trends from the GES from 2013 - 2021
-hide_description: true 
+hide_description: true
 ---
 
-- TOC
+1. TOC
 {:toc}
 
 

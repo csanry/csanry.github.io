@@ -12,7 +12,7 @@ description: >
 hide_description: true
 ---
 
-- TOC
+1. TOC
 {:toc}
 
 ## 🚩 Goal
