@@ -2,7 +2,7 @@
 layout: project
 title: HDB 
 date: 05 October 2023
-image: /assets/img/HDB/featured_image.png
+image: /assets/img/HDB/featured_image_hdb.png
 links:
   - title: Dashboard link
     url: https://public.tableau.com/app/profile/clarence/viz/SingaporeHDBResaleTransactions-Dashboard/HDBDashboard

@@ -2,7 +2,7 @@
 layout: project
 title: Graduate Employment Survey Dashboard 
 date: 18 August 2023 
-image: /assets/img/GES/featured_image.png
+image: /assets/img/GES/featured_image_ges.png
 links:
   - title: Dashboard link
     url: https://public.tableau.com/app/profile/clarence/viz/GESInsights/GESDashboard
