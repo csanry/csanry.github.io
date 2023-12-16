@@ -5,8 +5,6 @@ layout: page
 
 {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
 
-{{ content }}
-
 {% assign date_formats  = site.data.strings.date_formats               %}
 {% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
 {% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:true %}
@@ -31,3 +29,18 @@ layout: page
 
   {% if forloop.last %}</div>{% endif %}
 {% endfor %}
+
+{{ content }}
+
+<span class="ellipsis ml1">
+  <h2>More Links</h2>
+  {% for link in page.links %}
+  <a class="btn btn-sm btn-primary mt1" href="{{ link.url }}" property="sameAs" target="{{ link.target }}">
+    <small class="{{ site.data.strings.links_icon | default:'icon-link' }}"></small>
+      <b>
+        {{ link.title }}
+      </b>
+  </a>&nbsp;
+  {% unless forloop.last %}{{ separator }}{% endunless %}
+  {% endfor %}
+</span>

@@ -7,7 +7,21 @@ description: >
 hide_description: true
 sitemap: true
 cover: true
-featured: false 
+featured: false
+links:
+  - title: About
+    url: /about/ 
+    target: _self
+  - title: Blog 
+    url: /blog/ 
+    target: _self
+  - title: Projects 
+    url: /projects/ 
+    target: _self
+  - title: Resume 
+    url: /resume.html
+    target: _self
+permalink: /home/
 ---
 
 ## A bit about myself

@@ -10,6 +10,19 @@ slug: about
 permalink: /about/
 sidebar: true 
 order: 1
+links:
+  - title: Home
+    url: /home/
+    target: _self
+  - title: Blog 
+    url: /blog/ 
+    target: _self
+  - title: Projects 
+    url: /projects/ 
+    target: _self
+  - title: Resume 
+    url: /resume.html
+    target: _self
 ---
 
 
@@ -108,7 +121,7 @@ print("Hello, World!")
 <!--author-->
 
 <!-- Links -->
-[resume]: /_layouts/resume.html
+[resume]: /resume.html
 [foodpanda]: https://www.linkedin.com/company/foodpanda
 [Kantar Analytics]: https://www.kantar.com/expertise/analytics 
 [Singapore Management University]: https://masters.smu.edu.sg/programme/master-of-it-in-business#programmeDetails-tab

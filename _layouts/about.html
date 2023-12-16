@@ -40,6 +40,19 @@ layout: base
   </header>
 
   {{ content }}
+  
+  <span class="ellipsis ml1">
+    <h2>More Links</h2>
+    {% for link in page.links %}
+    <a class="btn btn-sm btn-primary mt1" href="{{ link.url }}" property="sameAs" target="{{ link.target }}">
+      <small class="{{ site.data.strings.links_icon | default:'icon-link' }}"></small>
+        <b>
+          {{ link.title }}
+        </b>
+    </a>&nbsp;
+    {% unless forloop.last %}{{ separator }}{% endunless %}
+    {% endfor %}
+  </span>
 </article>
 
 {% include components/dingbat.html %}

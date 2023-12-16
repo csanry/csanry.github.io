@@ -2,40 +2,25 @@
 layout: projects
 title: projects
 show_collection: projects
-description: >
-  Description for projects here
-hide_description: true
+description: > 
+  This section showcases a range of personal projects, from data analysis to visualisation and machine learning. Each project demostrates a unique skill set and problem-solving approach. Browse through to see my work and feel free to reach out if you have any questions or comments.
+hide_description: false 
 no_groups: true
 sidebar: true
 order: 3
-sitemap: true
+links:
+  - title: Home
+    url: /home/
+    target: _self
+  - title: About
+    url: /about/ 
+    target: _self
+  - title: Blog 
+    url: /blog/ 
+    target: _self
+  - title: Resume 
+    url: /resume.html
+    target: _self
+sitemap: tru
 permalink: /projects/
 ---
-
-<!-- ## Updated daily 
-
-* [python_katas]{:.heading.flip-title} --- Documentating my process and lessons from practice problems using Python -->
-
-<!-- 
-## Vizzes
-* [Test-one]{:.heading.flip-title} --- Template 3  
-* [telco_churn]{:.heading.flip-title} --- Template 3  
-* [next]{:.heading.flip-title} --- Templat -->
-
-
-
-### Navigation
-#### [resume]
-#### [blog] 
-
-<!--author-->
-
-<!-- Links -->
-
-[resume]: /resume/
-[blog]: /blog/
-[next]: 2022-12-12-next-nexxt.md
-[Hydejack]: https://hydejack.com
-[Test-one]: test.md
-[telco_churn]: 2022-06-11-telco-churn.md
-[python_katas]: 2022-03-12-python.md
