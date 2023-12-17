@@ -1,7 +1,7 @@
 ---
 layout: about 
 title: >
-  > whoami
+  about 
 description: >
   About page
 hide_description: true
@@ -98,7 +98,7 @@ print("Hello, World!")
     <a href="#"><img alt="Tableau" src ="https://img.shields.io/badge/Tableau-023020?logo=tableau&logoColor=white"></a>
 </p>
 <br>
-### [Check out my resume here](/resume.html)
+### Check out my [resume](/resume.html)
 {:.read-more}
 
 ## How my 🧠 works
@@ -114,7 +114,7 @@ print("Hello, World!")
 
 
 
-### [Get more of my posts here](/posts/)
+### Read more [posts](/blog/)
 {:.read-more}
 
 

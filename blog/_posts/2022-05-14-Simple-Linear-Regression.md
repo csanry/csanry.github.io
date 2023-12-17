@@ -9,6 +9,9 @@ hide_last_modified: true
 sitemap: false
 ---
 
+1. TOC
+{:toc}
+
 > Machine learning and statistics have many applications in business and the social sciences. However, the theory is often intimidating and not easily understood. In this series of articles, I aim to demystify the concepts behind the common tools used in data science and machine learning, starting with linear regression.
 
 ## Overview
@@ -128,3 +131,7 @@ The R² is often used and reported to validate our model’s “strength” as i
 \[2\] For diving deeper into the subject, check out Penn State University’s free notes on [Applied Regression Analysis](https://online.stat.psu.edu/stat462/node/79/)
 
 \[3\] For more information about the assumptions of OLS regression, check out [this article](https://statisticsbyjim.com/regression/ols-linear-regression-assumptions/) by Jim Frost
+
+<br>
+### Read more [posts](/blog/)
+{:.read-more .no_toc}

@@ -5,8 +5,8 @@ slug: Blog
 sidebar: true
 order: 2
 description: >
-  blog posts
-hide_description: true
+  🛸 Read my short articles here; topics range from Machine Learning to programming insights.
+hide_description: false
 no_groups: false
 sitemap: true
 links:
