@@ -11,15 +11,15 @@ no_groups: false
 sitemap: true
 links:
   - title: Home
-    url: /index/
+    url: /
     target: _self
   - title: About
-    url: /about/ 
+    url: /about/
     target: _self
-  - title: Projects 
-    url: /projects/ 
+  - title: Projects
+    url: /projects/
     target: _self
-  - title: Resume 
+  - title: Resume
     url: /resume.html
     target: _self
 permalink: /blog/

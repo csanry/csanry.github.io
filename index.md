@@ -1,7 +1,7 @@
 ---
 layout: welcome
 title: >
-  Hello there
+  😎 Hello there
 description: >
   Hello there
 hide_description: true
@@ -21,15 +21,19 @@ links:
   - title: Resume 
     url: /resume.html
     target: _self
-permalink: /home/
+permalink: /
+author: Clarence
 ---
 
-## A bit about myself
+# Welcome to my website 
 
+The main purpose of this space is to provide a quick, centralised repository of my `projects`, `posts`, and `resume`.
+
+I can be contactable via email @ clarence.san@foodpanda.com or [linkedin](https://www.linkedin.com/in/clarencesan/). 
 <!--author-->
 
 
-### [Find out more here](/about/)
+### Find out more [about me](/about/)
 {:.read-more}
 
 
@@ -37,14 +41,14 @@ permalink: /home/
 
 <!--projects-->
 
-### [Get more here](/projects/)
+### View more [projects](/projects/)
 {:.read-more}
 
 ## Posts
 
 <!--posts-->
 
-### [Get more of my posts here](/blog/)
+### Read more [posts](/blog/)
 {:.read-more}
 
 

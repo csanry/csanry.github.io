@@ -12,15 +12,15 @@ sidebar: true
 order: 1
 links:
   - title: Home
-    url: /home/
+    url: /
     target: _self
-  - title: Blog 
-    url: /blog/ 
+  - title: Blog
+    url: /blog/
     target: _self
-  - title: Projects 
-    url: /projects/ 
+  - title: Projects
+    url: /projects/
     target: _self
-  - title: Resume 
+  - title: Resume
     url: /resume.html
     target: _self
 ---
