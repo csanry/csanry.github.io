@@ -1,7 +1,9 @@
 ---
 layout: welcome
-title: >
+page-title: >
   😎 Hello there
+title: >
+  Home
 description: >
   Hello there
 hide_description: true
@@ -10,13 +12,13 @@ cover: true
 featured: false
 links:
   - title: About
-    url: /about/ 
+    url: /about/
     target: _self
-  - title: Blog 
-    url: /blog/ 
+  - title: Blog
+    url: /blog/
     target: _self
-  - title: Projects 
-    url: /projects/ 
+  - title: Projects
+    url: /projects/
     target: _self
   - title: Resume 
     url: /resume.html
@@ -29,7 +31,7 @@ author: Clarence
 
 The main purpose of this space is to provide a quick, centralised repository of my `projects`, `posts`, and `resume`.
 
-I can be contactable via email @ clarence.san@foodpanda.com or [linkedin](https://www.linkedin.com/in/clarencesan/). 
+I can be contactable via email @ [clarence.san@foodpanda.com]() or [linkedin](https://www.linkedin.com/in/clarencesan/). 
 <!--author-->
 
 

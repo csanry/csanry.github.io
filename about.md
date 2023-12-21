@@ -1,5 +1,7 @@
 ---
-layout: about 
+layout: about
+page-title: >
+  > whoami
 title: >
   about 
 description: >
