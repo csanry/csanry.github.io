@@ -81,15 +81,16 @@ excerpt_separator:     <!--more-->
 # ----------------------------------------------------------------------------------------
 
 # Sidebar image and theme color of the site.
-accent_image:
-  background:          /assets/img/dark-blue.jpg
-  overlay:             false
-accent_color:          rgb(122,135,82)
+accent_image:          /assets/img/prussian.png
+
+# Pacific cyan
+accent_color:          rgb(0, 180, 216)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
-# Defaults to `accent_color`.
-theme_color:           rgb(122,135,112)
+# Defaults to `accent_color`
+# Federal blue 
+theme_color:           rgb(3, 4, 94)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/config/#changing-fonts>
@@ -405,22 +406,16 @@ jekyll_compose:
       description: >
         A short ~160 character description of your post for search engines,
         social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
     posts:
       layout: post
       description: >
         A short ~160 character description of your post for search engines,
         social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
     projects:
       layout: project
       description: >
         A short ~160 character description of your post for search engines,
         social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
       links:
         - title: Project Link
           url: https://example.com
