@@ -30,8 +30,9 @@ code, pre {
 code {
   @extend .color-transition;
   padding: .25em .5em;
-  background-color: var(--gray-bg);
+  background-color: var(--accent-color-darkened);
   font-size: smaller;
+  font-weight: bold;
 }
 
 .figure-base {
