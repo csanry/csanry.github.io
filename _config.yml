@@ -84,7 +84,7 @@ excerpt_separator:     <!--more-->
 accent_image:          /assets/img/prussian.png
 
 # Pacific cyan
-accent_color:          rgb(0, 180, 216)
+accent_color:          rgb(0, 160, 216)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
@@ -105,7 +105,7 @@ font:                  Noto Sans, Helvetica, Arial, sans-serif
 font_heading:          Roboto Slab, Impact, Helvetica, Arial, sans-serif
 
 # The font used for code blocks. Expects a string that is a valid CSS font-family value.
-font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+font_code:             Menlo, Fira Code, Monaco, Consolas, monospace;
 
 defaults:
 
