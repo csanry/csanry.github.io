@@ -1,14 +1,11 @@
 ---
-layout: grid
+layout: blog 
 title: blog
 slug: Blog
 sidebar: true
 order: 2
 description: >
   🛸 Read my short articles here; topics range from Machine Learning to programming insights.
-hide_description: false
-no_groups: false
-sitemap: true
 links:
   - title: Home
     url: /
@@ -22,5 +19,13 @@ links:
   - title: Resume
     url: /resume.html
     target: _self
-permalink: /blog/
 ---
+
+<div style="text-align: right">
+  <a class="btn btn-sm btn-primary mt1" href="/posts" property="sameAs" target="_self">
+    <small class="{{ site.data.strings.links_icon | default:'icon-link' }}"></small>
+    <b>
+      View by year
+    </b>
+  </a>
+</div>
