@@ -49,9 +49,9 @@ continue_reading:      >
 #   okay:                Okay
 
 not_found:
-  title:               '404: Page Not Found'
+  title:               '404: Hello, is it me you are looking for?'
   message:             |
-    Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
+    Sorry, we've seem to have lost that URL or it's pointing to something that doesn't exist.
     <!--home_link--> to try finding it again.
   home_link:           Head back home
 

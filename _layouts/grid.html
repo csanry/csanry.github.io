@@ -1,7 +1,9 @@
 ---
 # Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
-layout: page
+layout: base
 ---
+
+{{ content }}
 
 {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
 
@@ -29,8 +31,6 @@ layout: page
 
   {% if forloop.last %}</div>{% endif %}
 {% endfor %}
-
-{{ content }}
 
 <span class="ellipsis ml1">
   <h2>More Links</h2>

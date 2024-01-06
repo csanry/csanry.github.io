@@ -23,6 +23,7 @@ layout: base
   <h1 class="page-title">{{ page.title | default:strings.not_found.title | default: "404: Page Not Found" }}</h1>
   <div class="hr pb0"></div>
 
+  <img src="{{site.url}}/assets/img/lionel_richie.png" width="100%" height="auto" />
   {% assign test = page.content | strip_newlines %}
   {% if test != "" %}
     {{ content }}
