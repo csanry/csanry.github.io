@@ -8,13 +8,12 @@ source 'https://rubygems.org'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.9"
+# gem "jekyll", "~> 3.9"
 
 group :jekyll_plugins do
   gem 'github-pages'
   gem 'jekyll-include-cache'
   gem 'jekyll-compose'
-  gem 'jekyll-paginate'
 end
 
 gem 'wdm' if Gem.win_platform?
