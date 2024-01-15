@@ -83,7 +83,7 @@ pagination:
 # ----------------------------------------------------------------------------------------
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/prussian.png
+accent_image:          /assets/img/background_wave.png
 
 # Pacific cyan
 accent_color:          rgb(0, 160, 216)
