@@ -29,9 +29,11 @@ author: Clarence
 
 # Welcome to my website 
 
-The main purpose of this space is to provide a quick, centralised repository of my `projects`, `posts`, and `resume`.
+The main purpose of this space is to provide a quick, centralised repository for my [`projects`](/projects/), [`posts`](/blog/), and [`resume`](/resume/).
 
-I can be contactable via email @ [clarence.san@foodpanda.com]() or [linkedin](https://www.linkedin.com/in/clarencesan/). 
+I have a passion for sharing my personal growth and learnings in data and machine learning; some of my more recent interests include learning `Rust` and `PySpark`.
+
+I can be contactable via email @ [`clarence.san@foodpanda.com`](mailto:clarence.san@foodpanda.com) or [`linkedin`](https://www.linkedin.com/in/clarencesan/). 
 <!--author-->
 
 
