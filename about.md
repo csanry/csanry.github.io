@@ -10,7 +10,7 @@ hide_description: true
 sitemap: true
 slug: about
 permalink: /about/
-sidebar: true 
+sidebar: true
 order: 1
 links:
   - title: Home
