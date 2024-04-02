@@ -1,6 +1,6 @@
 ---
 layout: project
-title: HDB 
+title: HDB Dashboard
 date: 05 October 2023
 image: /assets/img/HDB/featured_image_hdb.png
 links:
@@ -14,6 +14,8 @@ hide_description: true
 
 1. TOC
 {:toc}
+
+[`data analysis`]() [`data visualisation`]()
 
 ## 🚩 Goal
 

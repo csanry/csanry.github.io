@@ -15,6 +15,8 @@ hide_description: true
 1. TOC
 {:toc}
 
+[`data analysis`]() [`data visualisation`]()
+
 ## 🚩 Goal 
 
 Understand the demographics and lifestyles of users on OkCupid [(view on kaggle here)]{:target="_blank"}
