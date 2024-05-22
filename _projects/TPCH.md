@@ -62,7 +62,7 @@ Consistency: TPC-H provides a consistent set of queries and datasets for compari
 ## 🖥️ Process 
 
 <figure>
-  <img src="{{site.url}}/assets/img/GES/featured_image_tpch.png" width="100%" height="auto" />
+  <img src="{{site.url}}/assets/img/TPCH/featured_image_tpch.png" width="100%" height="auto" />
   <figcaption>Fig caption</figcaption>
 </figure>
 
