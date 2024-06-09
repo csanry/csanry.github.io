@@ -1,12 +1,11 @@
 basics:
-  name: "Clarence San"
-  label: "Data Science and Analytics"
+  name: Clarence San
+  label: Data Science and Analytics professional with 5+ years industry experience
   picture: 
   email: "clarencesan@gmail.com"
   phone: ""
-  website: "https://csanry.github.io/"
-  summary: >
-    Hello, I'm Clarence
+  website:
+  summary:
   profiles:
     - network: "Github"
       username: "csanry"
@@ -15,45 +14,47 @@ basics:
       username: "Clarence San"
       url: "https://www.linkedin.com/in/clarencesan/"
 work:
-  - company: "Foodpanda SG"
-    position: "Data Analyst"
-    website: "foodpanda.sg"
+  - company: "foodpanda"
+    position: "Senior Data Analyst"
+    website: "https://www.foodpanda.sg/"
     startDate: "2022-01-01"
     endDate: ""
-    summary: >
-      - Serving the regional APAC New Verticals team spanning 12 markets  
+    summary:
     highlights:
-      - Optimized SQL queries for supplier dashboard to reduce processing times by 10%
+      - Designed and implemented a relational data wareshouse using BQ and dbt
+      - Built and managed tableau and looker studio dashboards
+      - Wrote and open sourced python libraries and applications
+      - Automated email sendouts and presentations for business stakeholders
+      
   - company: "Kantar Millward Brown"
-    position: "Analytics Associate"
+    position: "Advanced Analytics Associate"
     website: "https://www.kantar.com"
     startDate: "2019-08-01"
     endDate: "2021-01-01"
-    summary: >
-      The Analytics division of Kantar
+    summary:
     highlights:
       - Developed analytic models - methodologies included Structural Equation Modelling, Regression, Classification, Segmentation, Ensemble modelling and Marketing Mix Modelling
       - Conceptualize and spearheaded an APAC-wide knowledge session on improving MS Excel workflows - 500+ attendees
       - Instituted a repository of ~20 Python, R, and VBA scripts to streamline workflow efficiency and reduce time required for menial checks by more than 80%
+
 education:
   - institution: "Singapore Management University"
     area: "Analytics"
-    studyType: "Masters"
+    studyType: "Master of IT in Business"
     startDate: "2022-01-01"
-    endDate: "2023-04-01"
-    # gpa: "4.0"
+    endDate: "2023-07-01"
     courses:
-      - "Coursework - Applied Machine Learning, Data Science for Business, Machine Learning Engineering, Statistical Analysis, Spreadsheet Modelling"
+      - "Test"
+      - "Coursework - Applied Machine Learning, Big Data Techniques, Data Science for Business, Machine Learning Engineering, Statistical Analysis, Spreadsheet Modelling"
   - institution: "University of Melbourne"
     area: "Media and Communications"
-    studyType: "Bachelors"
+    studyType: "Bachelors of Arts"
     startDate: "2016-12-01"
     endDate: "2018-12-01"
-    # gpa: "4.0"
     courses:
       - "Coursework - Digital Media Research, Research Methods, Comparative Media Systems, Marketing Communications"
 projects:
-  - title: "Example title"
+  - title: "Deep Learning "
     startDate: "2018-09-01"
     endDate: "2019-10-01"
     summary: "Summary here"
@@ -79,10 +80,5 @@ skills:
       - "Google Cloud Platform"
       - "BigQuery"
       - "Airflow"
-# references:
-#   - name: "Erlich Bachman"
-#     reference: >
-#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-#       Company proved that he will be a valuable addition to any company.
 
 # <https://jsonresume.org/>
