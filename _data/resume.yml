@@ -54,15 +54,28 @@ education:
     courses:
       - "Coursework - Digital Media Research, Research Methods, Comparative Media Systems, Marketing Communications"
 projects:
-  - title: "Deep Learning "
-    startDate: "2018-09-01"
-    endDate: "2019-10-01"
-    summary: "Summary here"
-    url: "url"
+  - title: "ELT Pipelines with dbt, airflow and snowflake"
+    startDate:
+    endDate:
+    summary:
+    url: "https://github.com/csanry/dbt-tpch-pipeline"
     highlights:
-      - "Point 1"
-      - "Point 2"
-      - "Point 3"
+      - "Data Engineering project demonstration"
+  - title: "Foodpanda Data Visualisation challenge"
+    startDate:
+    endDate:
+    summary:
+    url: "https://csanry.github.io/projects/OkCupid/"
+    highlights:
+      - "2nd place in the competition" 
+  - title: "Foodpanda Data Summit '23 Hackathon"
+    startDate:
+    endDate:
+    summary:
+    url: "https://github.com/csanry/fp-hackathon"
+    highlights:
+      - "3rd place in the competition - Ridernomics"
+  
 awards/certifications:
   - title: "Example Award"
     awarder: "Awarder"
