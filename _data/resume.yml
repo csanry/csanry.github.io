@@ -21,10 +21,12 @@ work:
     endDate: ""
     summary:
     highlights:
-      - Designed and implemented a relational data wareshouse using BQ and dbt
-      - Built and managed tableau and looker studio dashboards
+      - Designed and implemented a relational data wareshouse using BQ and dbt; reduced computation requirements of pipelines >10%
+      - Built and managed tableau and looker studio dashboards, consisting of >50 SQL queries for 11 markets in the APAC region
       - Wrote and open sourced python libraries and applications
-      - Automated email sendouts and presentations for business stakeholders
+      - Automated email sendouts and presentations for business stakeholders; reduced time to query data and prepared monthly reports from 4 hours to 30 minutes
+      - Managed a large-scale source migration of >200 dbt models with 0 incidents; eliminated timeout errors by refactoring dbt models; identified and deprecated 40+ redundant models to save >$300 USD in monthly cloud expenses
+
       
   - company: "Kantar Millward Brown"
     position: "Advanced Analytics Associate"
@@ -76,11 +78,6 @@ projects:
     highlights:
       - "3rd place in the competition - Ridernomics"
   
-awards/certifications:
-  - title: "Example Award"
-    awarder: "Awarder"
-    highlights:
-      - "2019"
 skills:
   - name: "Languages"
     keywords:
