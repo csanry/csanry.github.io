@@ -35,8 +35,8 @@ layout: base
   <div class="columns {% unless no_third_column %}columns-break{% endunless %}">
     {% assign l_col = page.left_column %}
     {% assign r_col = page.right_column %}
-    {% unless l_col %}{% assign l_col = 'work,volunteer,education,awards,publications,references' | split:',' %}{% endunless %}
-    {% unless r_col %}{% assign r_col = 'languages,skills,interests' | split:',' %}{% endunless %}
+    {% unless l_col %}{% assign l_col = 'work,volunteer,education,awards,publications,references,languages,skills,interests' | split:',' %}{% endunless %}
+    {% unless r_col %}{% assign r_col = '' | split:',' %}{% endunless %}
 
     <div class="column column-3-5">
       {% for sec in l_col %}
@@ -65,32 +65,6 @@ layout: base
         {% endcase %}
       {% endfor %}
     </div>
-    <div class="column column-2-5">
-      {% for sec in r_col %}
-        {% case sec %}
-        {% when 'work' %}
-          {% include pro/resume/work.html %}
-        {% when 'volunteer' %}
-          {% include pro/resume/volunteer.html %}
-        {% when 'education' %}
-          {% include pro/resume/education.html %}
-        {% when 'projects' %}
-          {% include pro/resume/projects.html %}
-        {% when 'awards' %}
-          {% include pro/resume/awards.html %}
-        {% when 'publications' %}
-          {% include pro/resume/publications.html %}
-        {% when 'references' %}
-          {% include pro/resume/references.html %}
-        {% when 'languages' %}
-          {% include pro/resume/languages.html %}
-        {% when 'skills' %}
-          {% include pro/resume/skills.html %}
-        {% when 'interests' %}
-          {% include pro/resume/interests.html %}
-        {% else %}
-        {% endcase %}
-      {% endfor %}
-    </div>
+   
   </div>
 </article>

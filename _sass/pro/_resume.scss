@@ -157,8 +157,8 @@
 
   @media screen and (min-width: $break-point-5) {
     .fr { float: right }
-    .column-3-5 { width: 66.67% }
-    .column-2-5 { width: 33.33% }
+    .column-3-5 { width: 100% }
+    .column-2-5 { width: 0% }
   }
 
   @media screen and (min-width: $break-point-dynamic) {
@@ -194,7 +194,7 @@
   @media print and (min-width: 5.247in) {
     article > .note { padding-right: 11rem }
     .fr { float: right }
-    .column-3-5 { width: 70% }
-    .column-2-5 { width: 30% }
+    .column-3-5 { width: 100% }
+    .column-2-5 { width: 0% }
   }
 }

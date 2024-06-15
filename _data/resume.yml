@@ -26,7 +26,6 @@ work:
       - Wrote and open sourced python libraries and applications
       - Automated email sendouts and presentations for business stakeholders; reduced time to query data and prepared monthly reports from 4 hours to 30 minutes
       - Managed a large-scale source migration of >200 dbt models with 0 incidents; eliminated timeout errors by refactoring dbt models; identified and deprecated 40+ redundant models to save >$300 USD in monthly cloud expenses
-
       
   - company: "Kantar Millward Brown"
     position: "Advanced Analytics Associate"
@@ -46,7 +45,7 @@ education:
     startDate: "2022-01-01"
     endDate: "2023-07-01"
     courses:
-      - "Test"
+      - "GMAT 750 (98th percentile)"
       - "Coursework - Applied Machine Learning, Big Data Techniques, Data Science for Business, Machine Learning Engineering, Statistical Analysis, Spreadsheet Modelling"
   - institution: "University of Melbourne"
     area: "Media and Communications"
@@ -55,6 +54,7 @@ education:
     endDate: "2018-12-01"
     courses:
       - "Coursework - Digital Media Research, Research Methods, Comparative Media Systems, Marketing Communications"
+
 projects:
   - title: "ELT Pipelines with dbt, airflow and snowflake"
     startDate:

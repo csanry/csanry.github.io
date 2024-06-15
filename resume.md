@@ -10,14 +10,13 @@ left_column:
  - education
  - work
  - projects
- - publications
- - references
-right_column:
+ - skills
+ - languages
  - awards
  - volunteer
- - languages
- - skills
  - interests
+ - publications
+ - references
 no_language_icons: false
 no_skill_icons: false
 buttons:
