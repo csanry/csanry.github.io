@@ -3,16 +3,8 @@ basics:
   label: Data Science and Analytics professional with 5+ years industry experience
   picture: 
   email: "clarencesan@gmail.com"
+  website: https://github.com/csanry
   phone: ""
-  website:
-  summary:
-  profiles:
-    - network: "Github"
-      username: "csanry"
-      url: "https://github.com/csanry"
-    - network: "Linkedin"
-      username: "Clarence San"
-      url: "https://www.linkedin.com/in/clarencesan/"
 work:
   - company: "foodpanda"
     position: "Senior Data Analyst"
