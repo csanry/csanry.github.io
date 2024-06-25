@@ -19,52 +19,57 @@ hide_description: true
 
 ## 🚩 Goal
 
-> This project involves the extraction and transformation of data from the TPC-H (Transaction Processing Performance Council - Benchmark H) dataset. This is done in dbt and snowflake, and orchestrated using airflow.
+In this project, I design an ELT pipeline using `Snowflake` as the cloud data warehouse. I define my transformation pipelines in a `dbt` project, and orchestrate the pipelines using `Airflow` and `Astronomer Cosmos`.
 
-Deciding on an ETL vs ELT approach is critical when designing data pipelines. The traditional, time-tested ETL methodology first transforms data on a dedicated processing server, before ingesting said data into the data warehouse. With the advent of massively parallel processing databases and cloud infrastructure, ELT has emerged as an extremely viable alternative. Load the data directly into your data warehouse, which takes care of your staging, scaling and assigning processing / computation units to meet demand, and documentation. What's not to love? 
+The decision to use `ETL` or `ELT` informs subsequent considerations about data pipeline architecture and implementation. 
 
-In my humble opinion, there are two big pros with ELT: greater flexibility and better experience. ELT eliminates the need for a dedicated staging environment - when data is loaded with minimal processing into the data warehouse, its raw state is retained, meaning that downstream pipelines can be recreated, rewritten, or dropped easily in response to changing business priorities. Secondly, ELT democratises the responsibility of developing data pipelines. With dbt, transformation pipelines can be written by Analytics Engineers / Data Analysts, individuals who might understand the business better than Data Engineers, but might not have the technical chops to write scalable, robust ETL code.
+This project showcases the `ELT` approach, which has grown in popularity with the advent of [massively parallel processing databases]{:target="_blank"} and cloud infrastructure.
 
-In this project, I design an ELT pipeline using snowflake as the cloud data warehouse of choice. Transformation pipelines are defined in a dbt project, and the whole shebang is orchestrated using airflow + astro cosmos. 
+The crux of the ELT process is to load the data directly into your data warehouse, as opposed to maintaining a dedicated server responsible for processing and transforming your data.
 
-I touch on some pains in setting up and managing airflow. 
+<figure>
+  <img src="{{site.url}}/assets/img/TPCH/etl_vs_elt.png" width="100%" height="auto" />
+  <figcaption>Visualisation of the difference in ETL and ELT</figcaption>
+</figure>
 
+This key difference is ELT's most compelling case - when data is loaded with minimal processing into the data warehouse, its raw state is retained, meaning that downstream pipelines can be recreated, rewritten, or dropped easily in response to changing business priorities.
+
+When used in conjunction with tools like `dbt`, ELT shifts the responsibility of developing data pipelines to `Analytics Engineers / Data Analysts`, individuals who understand the business better than Data Engineers, but might not have the technical chops to write scalable, robust ETL code.
 
 
 ## 📊 Tools primer
 
-Snowflake is purpose-built for modern data workloads, providing several advantages over traditional on-premises and other cloud solutions:
+`Snowflake` is a cloud data platform, which is a key component of the [modern data stack]{:target="_blank"}. It supports transformation workloads written in SQL, along with a suite of other nifty features, such as autoscaling, a RESTful API, and extension to a broad ecosystem of 3rd party tools and technologies.
 
-Separation of Storage and Compute: Snowflake’s architecture separates storage from compute, allowing for independent scaling. This makes it particularly useful for handling large datasets and performing complex transformations without compromising performance.
+`Airflow` is an open source workflow management tool to orchestrate data engineering pipelines. To allow better visibility into the lineage of tasks, this project uses [Astronomer Cosmos]{:target="_blank"} to integrate `dbt` and `Airflow`.
 
-Fully Managed Service: Snowflake handles infrastructure management, scalability, and data security, allowing data engineers and analysts to focus more on data workflows and analytics rather than on maintaining the platform itself.
-
-Zero-Copy Cloning: Snowflake’s ability to clone databases without actually duplicating the data enables efficient testing and iteration of your data pipeline without the overhead of traditional data duplication.
-
-Data Sharing and Collaboration: Snowflake provides seamless data sharing across different teams and organizations, enhancing collaboration.
-
-SQL-Based Transformation: Snowflake supports SQL-based transformations, which are familiar to most data engineers, analysts, and data scientists, minimizing the learning curve.
-
-Support for Structured and Semi-Structured Data: Snowflake can handle not only structured data but also semi-structured data (JSON, XML, Parquet, etc.), making it highly flexible for modern data needs.
 
 ## 🖥️ TPC-H Data
 
-The TPC-H benchmark is a widely recognized tool for evaluating the performance and scalability of data processing systems. It consists of a set of decision support queries based on a multi-table schema representing the data of a typical business’s operations. Using TPC-H data for an ELT pipeline in Snowflake offers several advantages:
+The [TPC-H benchmark]{:target="_blank"} is a widely recognised tool for evaluating the performance of data processing systems. It consists of a suite of decision support queries based on a multi-table schema.
 
-Realistic and Industry-Standard Dataset: TPC-H simulates real-world business operations, and its use allows teams to focus on solving practical, business-relevant problems.
+I chose to build the project on the `TPC-H` dataset due to the following reasons:
 
-Complex Data Transformations: TPC-H queries are designed to test complex joins, aggregations, and other data manipulation operations. This gives teams a chance to fine-tune performance and test the scalability of the ELT pipeline with challenging data workloads.
+`Realism:` `TPC-H` simulates real-world business operations, entities, and relationships
 
-Performance Benchmarking: Implementing TPC-H in your ELT pipeline allows you to benchmark the performance of your data processing and transformation jobs, ensuring that your pipeline can handle enterprise-scale data volumes efficiently.
+`Integration with Snowflake:` `TPC-H` data tables are available as sample data within Snowflake
 
-Consistency: TPC-H provides a consistent set of queries and datasets for comparing different solutions, making it an excellent choice for testing and optimizing Snowflake’s capabilities in the context of data transformation.
+`Size:` Because of the size, building data pipelines from the `TPC-H` data requires efficiency in data processing and transformation jobs
+
+<figure>
+  <img src="{{site.url}}/assets/img/TPCH/tpch_schema.png" width="70%" height="auto" />
+  <figcaption>Schema of the TPC-H dataset</figcaption>
+</figure>
 
 ## 🖥️ Process 
 
 <figure>
-  <img src="{{site.url}}/assets/img/TPCH/featured_image_tpch.png" width="100%" height="auto" />
-  <figcaption>Fig caption</figcaption>
+  <img src="{{site.url}}/assets/img/TPCH/airflow-demo-3.gif" width="100%" height="auto" />
+  <figcaption>Spinning up a local instance of the project</figcaption>
 </figure>
+
+<!-- 
+In my humble opinion, there are two big pros with ELT: greater flexibility and better experience. ELT eliminates the need for a dedicated staging environment - when data is loaded with minimal processing into the data warehouse, its raw state is retained, meaning that downstream pipelines can be recreated, rewritten, or dropped easily in response to changing business priorities. Secondly, ELT democratises the responsibility of developing data pipelines. With dbt, transformation pipelines can be written by Analytics Engineers / Data Analysts, individuals who might understand the business better than Data Engineers, but might not have the technical chops to write scalable, robust ETL code.
 
 Extract:
 
@@ -72,7 +77,6 @@ The Extract phase is responsible for pulling raw data from source systems. In th
 Data may come from various sources such as transactional databases, external APIs, or files.
 Load:
 
-Once data is extracted, it is loaded into Snowflake. Snowflake’s COPY INTO command allows for fast, parallelized data loading from files stored in cloud storage (such as Amazon S3 or Google Cloud Storage).
 Snowflake can efficiently handle massive datasets, so even large volumes of TPC-H data can be loaded quickly and accurately.
 Transform:
 
@@ -116,9 +120,9 @@ Containerisation
 Colima is a container runtime for macOS and Linux. It is based on containers and provides Docker-compatible capabilities, which makes it easier to run containers without the need for Docker Desktop (which can be resource-heavy).
 Colima leverages the lightweight virtual machine framework, providing a fast and efficient container environment with seamless integration for macOS users.
 
-Fast: Colima uses a lightweight VM (via qemu or HyperKit) to run containers and can be faster than traditional Docker Desktop on macOS.
+Fast: Colima uses a lightweight VM (via qemu or HyperKit) to run containers and can be faster than traditional Docker Desktop on macOS. -->
 
-**Key point to highlight**
+<!-- **Key point to highlight**
 
 <figure>
   <img src="{{site.url}}/assets/img/TPCH/airflow-demo-2.gif" width="100%" height="auto" />
@@ -128,14 +132,9 @@ Fast: Colima uses a lightweight VM (via qemu or HyperKit) to run containers and 
 
 **Key point to highlight**
 
-Writeup
+Writeup -->
 
-<figure>
-  <img src="{{site.url}}/assets/img/TPCH/airflow-demo-3.gif" width="100%" height="auto" />
-  <figcaption>Users can filter and drill down the data using either the filter options on the left, or by using the dynamic charts</figcaption>
-</figure>
 
-**Yearly trends to identify changes over time**
 
 [Explore the project here]{:target="_blank"}
 {:.read-more}
@@ -144,10 +143,14 @@ Writeup
 
 **_Further Reading_**
 
-\[1\] More information about airflow [here](){:target="_blank"}
+\[1\] A brief introduction to Airflow internals / architecture can be found [here](https://medium.com/apache-airflow/airflow-architecture-simplified-3d582fc3ccb0){:target="_blank"}
+
+\[2\] A more detailed comparison of ETL vs ELT can be found [here](https://rivery.io/blog/etl-vs-elt){:target="_blank"}
 
 
 <!-- Links -->
-[data.gov.sg]: https://beta.data.gov.sg/
-[accessed here]: https://beta.data.gov.sg/datasets/d_3c55210de27fcccda2ed0c63fdd2b352/view
+[TPC-H benchmark]: https://docs.snowflake.com/en/user-guide/sample-data-tpch
+[modern data stack]: https://www.thoughtspot.com/data-trends/best-practices/modern-data-stack
 [Explore the project here]: https://github.com/csanry/dbt-tpch-pipeline
+[massively parallel processing databases]: https://airbyte.com/data-engineering-resources/mpp-database
+[Astronomer Cosmos]: https://www.astronomer.io/cosmos
